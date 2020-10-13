@@ -1,5 +1,4 @@
-# structure_iden_cs
-Compressive-sensing-based structure identification for multilayer networks
+# Compressive-sensing-based structure identification for multilayer networks
 
 @article{mei2017compressive,
   title={Compressive-sensing-based structure identification for multilayer networks},
