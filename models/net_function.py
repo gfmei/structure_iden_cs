@@ -15,7 +15,7 @@ from scipy.integrate import odeint
 
 def lorenz(v0, t, sigma, rho, beta):
     x, y, z = v0
-    return [sigma*(y - x), x*(rho - z) - y, x*y - beta*z]
+    return [sigma * (y - x), x * (rho - z) - y, x * y - beta * z]
 
 
 def solve(v0):
@@ -47,7 +47,7 @@ if __name__ == "__main__":
     tserial = tend - tstart
     print(" %8.3f seconds" % tserial)
 
-    print("num_processes = %i, speedup = %.2f" % (num_processes, tserial/tmp))
+    print("num_processes = %i, speedup = %.2f" % (num_processes, tserial / tmp))
 
     check = [(sol1 == sol2).all()
              for sol1, sol2 in zip(serial_solutions, mp_solutions)]
